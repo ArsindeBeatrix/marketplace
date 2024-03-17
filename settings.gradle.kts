@@ -1,4 +1,8 @@
 pluginManagement {
+    val kotlinVersion: String by settings
+    plugins {
+        kotlin("jvm") version kotlinVersion
+    }
     repositories {
         mavenCentral()
         gradlePluginPortal()
@@ -10,3 +14,5 @@ plugins {
 }
 
 rootProject.name = "otuskotlin-marketplace-202402"
+
+include("m1l1-first")
